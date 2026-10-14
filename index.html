@@ -574,12 +574,12 @@ sup.fn a{text-decoration:none;padding:16px 19px;margin:0 -19px}
         <p class="card-num">01 / 04</p>
         <div class="card-head">
           <h3 class="card-title">CIS statement pipeline and dashboards</h3>
-          <p class="card-status">Live: intake, matching, filing and client dashboards; chasing in first use</p>
+          <p class="card-status">Live: intake, matching, filing and client dashboards; statement requests in first use</p>
         </div>
         <div class="card-figs"><div class="metrics-box">
   <ul class="metrics" aria-label="Key figures">
     <li class="metric"><span class="metric-value">41</span><span class="metric-label">client dashboards</span><span class="metric-note">at launch, Aug 2026<sup class="fn"><a href="#fn-1">1</a></sup></span></li>
-    <li class="metric"><span class="metric-value">236</span><span class="metric-label">expected statements tracked in one quarter</span><span class="metric-note">38 clients, Q1 2026-27, Oct 2026<sup class="fn"><a href="#fn-2">2</a></sup></span></li>
+    <li class="metric"><span class="metric-value">335 of 351</span><span class="metric-label">documents received since July with a final outcome</span><span class="metric-note">22 Jul to 13 Oct 2026, WhatsApp and email, Oct 2026<sup class="fn"><a href="#fn-2">2</a></sup></span></li>
   </ul>
 </div>
 </div>
@@ -688,13 +688,13 @@ sup.fn a{text-decoration:none;padding:16px 19px;margin:0 -19px}
       <p class="lead">Staff see which contractor statements each client still owes, without checking by hand.</p>
     </header>
 <dl class="facts-row">
-  <div><dt>Status</dt><dd class="status">Live: intake, matching, filing and client dashboards; chasing in first use</dd></div>
+  <div><dt>Status</dt><dd class="status">Live: intake, matching, filing and client dashboards; statement requests in first use</dd></div>
   <div><dt>Stack</dt><dd>Python, PostgreSQL, Self-hosted OCR, OpenAI, n8n</dd></div>
   <div><dt>Role</dt><dd>Designed and built</dd></div>
 </dl><div class="metrics-box">
   <ul class="metrics" aria-label="Key figures">
     <li class="metric"><span class="metric-value">41</span><span class="metric-label">client dashboards</span><span class="metric-note">at launch, Aug 2026<sup class="fn"><a href="#fn-1">1</a></sup></span></li>
-    <li class="metric"><span class="metric-value">236</span><span class="metric-label">expected statements tracked in one quarter</span><span class="metric-note">38 clients, Q1 2026-27, Oct 2026<sup class="fn"><a href="#fn-2">2</a></sup></span></li>
+    <li class="metric"><span class="metric-value">335 of 351</span><span class="metric-label">documents received since July with a final outcome</span><span class="metric-note">22 Jul to 13 Oct 2026, WhatsApp and email, Oct 2026<sup class="fn"><a href="#fn-2">2</a></sup></span></li>
   </ul>
 </div>
     </div>
@@ -704,7 +704,7 @@ sup.fn a{text-decoration:none;padding:16px 19px;margin:0 -19px}
     <li class="does-card"><p class="does-who">Clients</p>
       <ul class="does-lines" role="list">
         <li>Send statements by WhatsApp or email, as a photo, PDF or spreadsheet.</li>
-        <li>Get a chase on WhatsApp in English or Georgian. <span class="does-tag">used once, Sep 2026</span></li>
+        <li>Get a WhatsApp request in English or Georgian listing the statements still missing.</li>
       </ul>
     </li>
     <li class="does-card"><p class="does-who">Staff</p>
@@ -780,12 +780,12 @@ sup.fn a{text-decoration:none;padding:16px 19px;margin:0 -19px}
     </div>
     <div class="case-close">
       <section class="block"><h3>Results</h3><div class="prose results"><ul>
-<li><span class="fig">54</span><sup class="fn"><a href="#fn-8">8</a></sup> statements received and matched for Q1 2026-27; the rest show as still owed on each client's dashboard.</li>
-<li><span class="fig">15</span><sup class="fn"><a href="#fn-9">9</a></sup> duplicates caught and counted once.</li>
+<li><span class="fig">62 of 64</span><sup class="fn"><a href="#fn-8">8</a></sup> Q1 2026-27 statements identified were matched to what each client owed.</li>
+<li><span class="fig">17</span><sup class="fn"><a href="#fn-9">9</a></sup> duplicate copies caught and counted once.</li>
 </ul></div></section>
       <section class="block"><h3>Decisions and trade-offs</h3><div class="prose"><ul>
 <li>Held, never guessed: client, contractor and month must be certain before a statement is filed. More documents wait for a person, but no wrong match reaches a client file.</li>
-<li>Chasing is attended: a person confirms each send, one client at a time, in a step separate from composing. It costs staff time, but a wrong or repeated message cannot reach a client.</li>
+<li>Statement requests are attended: a person confirms each send, one client at a time, in a step separate from composing. It costs staff time, but a wrong or repeated message cannot reach a client.</li>
 </ul></div></section>
     </div>
     <p class="case-next"><a href="#case-chatbot"><span class="case-end">End of 01</span><span class="case-go">Next: 02 Chatbot</span></a></p>
@@ -1152,7 +1152,7 @@ sup.fn a{text-decoration:none;padding:16px 19px;margin:0 -19px}
   </ul>
 </section>  <section class="method wrap" id="method">
     <h2>How I work</h2>
-    <div class="prose"><p>Every system starts with a written scope: what it does, what it must never do, and how we will know it works. Tests come before features. A person signs off every figure before it is filed and every chase before it is sent. Each system ships with handover documents, so someone else can run it.</p>
+    <div class="prose"><p>Every system starts with a written scope: what it does, what it must never do, and how we will know it works. Tests come before features. A person signs off every figure before it is filed and every statement request before it is sent. Each system ships with handover documents, so someone else can run it.</p>
 <p>I build with AI coding tools. Every pull request is tested, scanned for secrets and client data, and reviewed by a second AI before it merges. What I own is the problem framing, the design and its safeguards, checking the results, and running the systems live.</p></div>
   </section>
   <section class="about wrap">
@@ -1171,14 +1171,14 @@ sup.fn a{text-decoration:none;padding:16px 19px;margin:0 -19px}
   <h2 id="notes-h">How these figures were measured</h2>
   <ol>
     <li id="fn-1">41: dashboards live on launch day, from the dated project timeline (at launch; measured Aug 2026)</li>
-    <li id="fn-2">236: read-only count of expected statements, withdrawn ones excluded (38 clients, Q1 2026-27; measured Oct 2026)</li>
+    <li id="fn-2">335 of 351: read-only count of documents received, by current outcome; final = matched, duplicate, replaced, not a CIS statement, annual statement or removed (some set by a person) (22 Jul to 13 Oct 2026, WhatsApp and email; measured Oct 2026)</li>
     <li id="fn-3">42 of 42: acceptance benchmark of 42 defined cases, run against the live AI model; cases passed (live AI model; measured Jul 2026)</li>
     <li id="fn-4">140 of 140: every statement&#39;s lines re-added to the bank&#39;s printed totals and running balance (14,801 transactions, 0 parse failures; measured Jul 2026)</li>
     <li id="fn-5">9: count of bank layouts the tool tries, and the brands each one names (11 UK bank brands, 10 tested on real statements; measured Aug 2026)</li>
     <li id="fn-6">13: workflows marked active in a read of the live instance (live n8n instance; measured Oct 2026)</li>
     <li id="fn-7">3,807: automated tests listed by the test runner on main (the whole CIS pipeline code; measured Oct 2026)</li>
-    <li id="fn-8">54: read-only count of statements matched to an expected statement (Q1 2026-27; measured Oct 2026)</li>
-    <li id="fn-9">15: read-only count of documents held as duplicates: a re-sent file, or a second statement for the same month inside one PDF (since intake went live; measured Oct 2026)</li>
+    <li id="fn-8">62 of 64: read-only count of unique Q1 statements matched to an expected statement, over the Q1 statements identified; one match with its sender unconfirmed left out (Q1 2026-27, sender confirmed; measured Oct 2026)</li>
+    <li id="fn-9">17: read-only count of documents held as duplicates: a re-sent file, or a second statement for the same month inside one PDF (since intake went live; measured Oct 2026)</li>
     <li id="fn-10">6: count of languages in the assistant&#39;s supported list on the main branch (the WhatsApp assistant; measured Oct 2026)</li>
     <li id="fn-11">1,349: automated tests run on the main branch with placeholder settings and no live services (the assistant and dashboard code; measured Oct 2026)</li>
     <li id="fn-12">8 of 8: photos stored and paired to their messages in a live test; two live tests before the fix stored 5 of 8 (live test after the fix; measured Sep 2026)</li>
